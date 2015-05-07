@@ -1,0 +1,1066 @@
+@charset "utf-8";
+
+/**********************
+ * reset
+ **********************/
+*{ margin:0px; padding:0px;}
+a img{ border:none; background:none;}
+table{ border:0;}
+p,ul,li,dt,dd,dl,h1,h2,h2,h3,h4,h5,h6,body{ margin:0; padding:0;  font-weight:normal;}
+em,strong{ font-weight:normal; font-style:normal;}
+ul,li{ list-style-type:none;}
+a:link, a:visited, a:active{ color:#EEE; text-decoration:none;}
+a:hover{ color:#EEE; text-decoration:underline;}
+body{ color:#555; font-size:14px; line-height:1.5; background:#250012; font-family: "ＭＳ Ｐ明朝","メイリオ","ＭＳ Ｐ明朝", Meiryo,"Lucida Grande", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Geneva, Arial, Verdana, sans-serif;}
+input,select,option,textarea{ font-family: "ＭＳ Ｐゴシック", "メイリオ", Meiryo,"Lucida Grande", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Geneva, Arial, Verdana, sans-serif;}
+
+/**********************
+ * clearfix
+ **********************/
+ .cf:after{ content: "."; display:block; clear:both; height:0; visibility:hidden; background-position: center 0;}
+
+.cf{ min-height:1px;}
+
+.clear {
+	clear: both;
+}
+
+/* IE6 */
+* html .cf { height:1px;}
+
+/**********************
+ * tmplate
+ **********************/
+.wrapWidth{ width:960px; margin:0 auto; background:#250012;}
+.eng{ font-family:Arial,serif,sans-serif,cursive,fantasy,monospace;}
+/*
+div#headArea{
+	border-top:0px solid #09c;
+	color:#fff;
+	background-color: #FFF;
+}
+div#header{
+	height:0;
+	background-color: #FFF;
+}*/
+.header_image{
+	margin:0 0 5px 0px;
+}
+.header_logo{
+	margin:0 0 0 20px;
+}
+div#header h2#logo{ font-size:35px; font-weight:bold; float:left; margin:15px 20px 0 0;}
+div#header h2#logo span{ color:#250012;}
+div#header h2#logo a{ text-decoration:none;}
+div#header div#desc{ float:left; margin:20px 0 0 0; font-size:12px;}
+div#header div#contact{ float:right;}
+div#header div#contact div{ font-size:38px; font-weight:bold; height:45px; text-align:right;}
+div#header div#contact div span{ font-size:30px;}
+div#header div#contact dl{ text-align:right;}
+div#header div#contact dt,
+div#header div#contact dd{ display:inline; padding:0; font-size:14px;}
+div#header div#contact dt{ color:#250012; font-size:12px;}
+
+div#mainMenu{
+	/*
+	background-image: url(../images/new_page/title0.jpg);
+	background-repeat: no-repeat;
+	background-position: center 0;
+	*/
+}
+div#mainMenu ul{
+	padding:16px 0;
+	width:960px;
+	height:28px;
+}
+div#mainMenu li{ float:left; margin:24px 0 0 0;}/*229*/
+div#mainMenu li a{ display:block;}
+div#mainMenu li a:hover{}
+div#mainMenu li span{ display:block; padding:15px 0; background:#250012; color:#09c;}
+
+div#pageHead{
+	background:#250012;
+	margin:0 0 0 0;
+	height:40px;
+	width:auto;
+	/*background:url(../images/new_page/background.jpg) 0 0 repeat;*/
+}
+div#pageFooter{
+	background:#000;
+	height:40px;
+	width:auto;
+}
+div#copy{
+	padding:10px;
+	color:#FFF;
+	font-size:15px;
+	text-align:center;
+}
+
+
+div#pageHead div{}
+div#pageHead div img{ border:0;}
+div#pageHead dl{ margin:0 20px 0 140px;}
+div#pageHead dd{ color:#AAA;}
+/*div#pageHead hr{ padding:0 50px 0 0; margin:0 20px 0 652px;}*/
+div#pageHead h2{ font-weight:bold; font-size:24px; margin:20px 0 0 180px;}
+
+.twitter{ float:right; padding-top:48px; margin-left:20px;}
+div#facebook{ float:right; padding-top:48px; margin-left:20px;}
+
+/**********************
+ * TOP Column
+ **********************/
+div#bodyMainColumn_top{
+	/*background:#000;*/
+	background:url(../image/Art_top_bg.jpg) 0 0 repeat;
+	color:#FFF;
+	font-size:14px;
+	line-height:1.5;
+	border:0px solid #f7b6ce;
+	float:left;
+	width:960px;
+	height:673px;
+	margin:0 0 0 0;
+}
+div#bodyMainColumn_top .copy{
+	margin:645px 0 0 0;
+	color:#FFF;
+	font-size:12px;
+	text-align:center;
+}
+div#bodyMainColumn_top .top_orgel{
+	padding:0 50px 0 0;
+	margin:20px 0 0 380px;
+}
+div#bodyMainColumn_top .top_kokuchi{
+	margin:40px 0 0 320px;
+}
+div#bodyMainColumn_top .top_kokuchi_tx{
+	margin:0 0 0 300px;
+	width:280px;
+	font-size:14px;
+	text-align:center;
+}
+div#bodyMainColumn_top .staff_bosyu{
+	margin:30px 0 0 320px;
+background-color:rgba(0,0,0,0.70);
+/*	background:#F00;*/
+	width:240px;
+	height:70px;
+}
+div#bodyMainColumn_top .top_kokuchi_tx2{
+/*	margin:30px 0 0 300px;
+	width:280px;*/
+	padding-top:10px;
+	font-size:18px;
+	text-align:center;
+}
+
+
+div#bodyLeftColumn{
+	color:#FFF;
+	font-size:14px;
+	line-height:1.5;
+	border:0px solid #f7b6ce;
+	float:left;
+	width:480px;
+	height:673px;
+	margin:0 0 0 0;
+}
+div#bodyLeftColumn_calendar{
+	background:#000;
+	color:#FFF;
+	font-size:14px;
+	line-height:1.5;
+	border:0px solid #f7b6ce;
+	float:left;
+	width:960px;
+	height:750px;
+	margin:0 0 0 0;
+}
+div#bodyLeftColumn .category{
+	float:right;
+	margin-bottom:5px;
+}
+div#bodyLeftColumn h1{
+	font-size:24px;
+}
+div#bodyLeftColumn_top{
+	color:#FFF;
+	line-height:1.5;
+	border:0px solid #f7b6ce;
+	float:left;
+	width:450px;
+	height:825px;
+	margin:0 0 0 0;
+}
+div#bodyRightColumn_top{
+	color:#FFF;
+	/*background:#FFFFFF;*/
+	line-height:1.5;
+	border:0px solid #f7b6ce;
+	float:right;
+	width:450px;
+	height:645px;
+	margin:0 0 0 0;
+}
+div#bodyRightColumn_top hr{
+	padding:0 50px 0 0;
+	margin:0 20px 0 140px;
+}
+div#bodyRightColumn_top .facebook_img{
+	margin:0 20px 0 165px;
+}
+div#bodyRightColumn_top .twitter_img{
+	margin:15px 20px 0 165px;
+}
+div#bodyRightColumn_top h2{
+	font-weight:bold;
+	font-size:23px;
+	margin:20px 0 0 183px;
+}
+div#bodyRightColumn_top h3{
+	font-weight:bold;
+	font-size:23px;
+	margin:10px 0 0 198px;
+}
+div#bodyRightColumn_top .blog_title{
+	font-size:14px;
+	margin:5px 0 5px 138px;
+}
+div#bodyRightColumn_top h4{
+	font-weight:bold;
+	font-size:23px;
+	margin:10px 0 0 228px;
+}
+/**********************
+ * MENU Column
+ **********************/
+div#bodyMainColumn_menu{
+	background:url(../image/Art_menu_bg.jpg) 0 0 repeat;
+	color:#FFF;
+	font-size:14px;
+	line-height:1.5;
+	border:0px solid #f7b6ce;
+	float:left;
+	width:960px;
+	height:712px;
+	margin:0 0 0 0;
+}
+div#bodyLeftColumn_menu{
+	color:#FFF;
+	line-height:1.5;
+	border:0px solid #f7b6ce;
+	float:left;
+	width:450px;
+	height:825px;
+	margin:0 0 0 0;
+}
+div#bodyRightColumn_menu{
+	color:#FFF;
+	line-height:1.5;
+	border:0px solid #f7b6ce;
+	float:left;
+	width:450px;
+	height:825px;
+	margin:0 0 0 0;
+}
+div#bodyLeftColumn_menu .genre{
+	margin:20px 0 0 20px;
+	font-size:24px;	
+}
+div#bodyLeftColumn_menu .drink{
+	margin:0 0 0 30px;
+	font-size:16px;	
+	float:left;	
+}
+div#bodyLeftColumn_menu .price{
+	margin:0 0 0 30px;
+	font-size:16px;
+	float:right;	
+}
+div#bodyLeftColumn_menu hr{
+	margin:-10px 0 10px 20px;
+}
+div#bodyRightColumn_menu .genre{
+	margin:20px 0 0 20px;
+	font-size:24px;	
+}
+div#bodyRightColumn_menu .drink{
+	margin:0 0 0 30px;
+	font-size:16px;	
+	float:left;	
+}
+div#bodyRightColumn_menu .price{
+	margin:0 0 0 30px;
+	font-size:16px;
+	float:right;	
+}
+div#bodyRightColumn_menu hr{
+	margin:-10px 0 10px 20px;
+}
+
+/**********************
+ * Gallery Column Single
+ **********************/
+div#bodyMainColumn_gallery{
+	/*background:#000;*/
+	background:url(../image/Art_gallery_bg.jpg) 0 0 repeat;
+	color:#FFF;
+	line-height:1.5;
+	border:0px solid #f7b6ce;
+	float:left;
+	width:960px;
+	height:825px;
+	margin:0 0 0 0;
+}
+div#bodyMainColumn_gallery_sugi{
+	background:url(../image/Art_gallery_bg.jpg) 0 0 repeat;
+	color:#FFF;
+	line-height:1.0;
+	border:0px solid #f7b6ce;
+	float:left;
+	width:960px;
+	height:825px;
+	margin:0 0 0 0;
+}
+div#bodyLeftColumn_gallery{
+	color:#FFF;
+	border:0px solid #f7b6ce;
+	float:left;
+	width:450px;
+	height:825px;
+	margin:0 0 0 0;
+}
+div#bodyRightColumn_gallery{
+	color:#FFF;
+	border:0px solid #f7b6ce;
+	float:right;
+	width:450px;
+	height:825px;
+	margin:0 0 0 0;
+}
+div#bodyLeftColumn_gallery .artist_icon{
+	margin:30px 0 0 130px;	
+}
+div#bodyLeftColumn_gallery .artist_name{
+	margin:5px auto;
+	text-align:center;	
+	font-size:24px;	
+}
+div#bodyLeftColumn_gallery .artist_message{
+	margin:10px 0 0 40px;
+	font-size:15px;	
+}
+div#bodyLeftColumn_gallery .artist_message_s{
+	margin:10px 0 0 40px;
+	font-size:14px;	
+	line-height:1.1;
+}
+div#bodyLeftColumn_gallery .artist_message_m{
+	margin:10px 0 0 40px;
+	font-size:14px;	
+	line-height:1.4;
+}
+div#bodyRightColumn_gallery .artist_name{
+	margin:20px 35px 0 0;
+	text-align:center;	
+	font-size:22px;	
+}
+div#bodyRightColumn_gallery .artist_img1{
+	margin:0 0 30px 0;
+	float:left;
+}
+div#bodyRightColumn_gallery .artist_img2{
+	margin:0 28px 30px 0;
+	float:right;
+}
+div#bodyRightColumn_gallery .artist_img1_z{
+	margin:0 0 50px 100px;
+}
+div#bodyRightColumn_gallery .artist_img2_z{
+	margin:0 28px 30px 50px;
+}
+div#bodyRightColumn_gallery .artist_message{
+	margin:20px 40px 0 5px;
+	font-size:14px;
+}
+
+/**********************
+ * Gallery Column Duble
+ **********************/
+div#bodyMainColumn_gallery_d{
+	/*background:#000;*/
+	background:url(../image/Art_gallery_bg_d.jpg) 0 0 repeat;
+	color:#FFF;
+	line-height:1.5;
+	border:0px solid #f7b6ce;
+	float:left;
+	width:960px;
+	height:825px;
+	margin:0 0 0 0;
+}
+div#bodyLeftColumn_gallery_d{
+	color:#FFF;
+	border:0px solid #f7b6ce;
+	float:left;
+	width:450px;
+	height:825px;
+	margin:0 0 0 0;
+}
+div#bodyRightColumn_gallery_d{
+	color:#FFF;
+	line-height:1.5;
+	border:0px solid #f7b6ce;
+	float:right;
+	width:450px;
+	height:825px;
+	margin:0 0 0 0;
+}
+div#bodyLeftColumn_gallery_d .artist_icon{
+	margin:30px 0 0 148px;
+}
+div#bodyLeftColumn_gallery_d .artist_name{
+	margin:5px auto;
+	text-align:center;	
+	font-size:20px;	
+}
+div#bodyLeftColumn_gallery_d .artist_message{
+	margin:10px 0 0 30px;
+	font-size:15px;	
+	line-height:1.5;
+}
+div#bodyLeftColumn_gallery_d .artist_message_s{
+	margin:10px 0 0 30px;
+	font-size:14px;	
+	line-height:1.0;
+}
+div#bodyLeftColumn_gallery_d .artist_title{
+	margin:20px 0 5px 0;
+	text-align:center;	
+	font-size:28px;	
+}
+div#bodyLeftColumn_gallery_d .artist_img_center{
+	margin:0 25px 30px 80px;
+}
+div#bodyLeftColumn_gallery_d .artist_img_center2{
+	margin:0 25px 30px 120px;
+}
+div#bodyLeftColumn_gallery_d .artist_img_center3{
+	margin:0 25px 30px 100px;
+}
+div#bodyLeftColumn_gallery_d .artist_term{
+	margin:0 0 0 120px;
+	font-size:15px;	
+}
+div#bodyRightColumn_gallery_d .artist_icon{
+	margin:30px 0 0 148px;
+}
+div#bodyRightColumn_gallery_d .artist_name{
+	margin:5px auto;
+	text-align:center;	
+	font-size:20px;	
+}
+div#bodyRightColumn_gallery_d .artist_img1{
+	margin:0 0 30px 0;
+	float:left;
+}
+div#bodyRightColumn_gallery_d .artist_img2{
+	margin:0 25px 30px 0;
+	float:right;
+}
+div#bodyRightColumn_gallery_d .artist_img_center{
+	margin:0 25px 30px 40px;
+}
+div#bodyRightColumn_gallery_d .artist_img_center2{
+	margin:0 25px 30px 120px;
+}
+div#bodyRightColumn_gallery_d .artist_img_center3{
+	margin:0 25px 30px 100px;
+}
+div#bodyRightColumn_gallery_d .artist_message{
+	margin:10px 30px 0 30px;
+	font-size:15px;	
+}
+div#bodyRightColumn_gallery_d .artist_title{
+	margin:43px 0 5px 0;
+	text-align:center;	
+	font-size:28px;	
+}
+div#bodyRightColumn_gallery_d .artist_term{
+	margin:0 0 0 120px;
+	font-size:15px;	
+}
+/**********************
+ * Gallery Column Triple
+ **********************/
+div#bodyMainColumn_gallery_t{
+	/*background:#000;*/
+	background:url(../image/Art_gallery_bg_d.jpg) 0 0 repeat;
+	color:#FFF;
+	line-height:1.5;
+	border:0px solid #f7b6ce;
+	float:left;
+	width:960px;
+	height:825px;
+	margin:0 0 0 0;
+	
+}
+div#bodyMainColumn_gallery_t a:link, a:visited, a:active{ color:#EEE; text-decoration:underline;}
+div#bodyMainColumn_gallery_t a:hover{ color:#999; text-decoration:underline;}
+div#bodyLeftColumn_gallery_t{
+	color:#FFF;
+	line-height:1.5;
+	border:0px solid #f7b6ce;
+	float:left;
+	width:320px;
+	height:825px;
+	margin:0 0 0 0;
+}
+/*div#bodyCenterColumn_gallery_t{
+	color:#FFF;
+	line-height:1.5;
+	border:0px solid #f7b6ce;
+	float:left;
+	width:300px;
+	height:825px;
+	margin:0 0 0 0;
+}*/
+div#bodyRightColumn_gallery_t{
+	color:#FFF;
+	line-height:1.5;
+	border:0px solid #f7b6ce;
+	float:right;
+	width:320px;
+	height:825px;
+	margin:0 0 0 0;
+}
+div#bodyLeftColumn_gallery_t .artist_icon{
+	margin:30px 0 0 80px;
+}
+div#bodyLeftColumn_gallery_t .artist_name{
+	margin:5px auto;
+	text-align:center;	
+	font-size:18px;	
+}
+div#bodyLeftColumn_gallery_t .artist_message{
+	margin:10px 0 0 30px;
+	font-size:15px;	
+}
+div#bodyLeftColumn_gallery_t .artist_message_s{
+	margin:10px 0 0 30px;
+	font-size:14px;	
+	line-height:1.2;
+}
+div#bodyLeftColumn_gallery_t .artist_title{
+	margin:20px 0 5px 0;
+	text-align:center;	
+	font-size:28px;	
+}
+div#bodyLeftColumn_gallery_t .artist_img_center{
+	margin:0 25px 30px 40px;
+}
+div#bodyLeftColumn_gallery_t .artist_term{
+	margin:0 0 0 60px;
+	font-size:15px;	
+}
+div#bodyRightColumn_gallery_t .artist_icon{
+	margin:30px 0 0 80px;
+}
+div#bodyRightColumn_gallery_t .artist_name{
+	margin:5px auto;
+	text-align:center;	
+	font-size:18px;	
+}
+div#bodyRightColumn_gallery_t .artist_img1{
+	margin:0 0 30px 0;
+	float:left;
+}
+div#bodyRightColumn_gallery_t .artist_img2{
+	margin:0 25px 30px 0;
+	float:right;
+}
+div#bodyRightColumn_gallery_t .artist_img_center{
+	margin:0 25px 30px 40px;
+}
+div#bodyRightColumn_gallery_t .artist_message{
+	margin:10px 30px 0 30px;
+	font-size:15px;	
+}
+div#bodyRightColumn_gallery_t .artist_message_s{
+	margin:10px 0 0 30px;
+	font-size:14px;	
+	line-height:1.2;
+}
+div#bodyRightColumn_gallery_t .artist_title{
+	margin:20px 0 5px 0;
+	text-align:center;	
+	font-size:28px;	
+}
+div#bodyRightColumn_gallery_t .artist_term{
+	margin:0 0 0 60px;
+	font-size:15px;	
+}
+/**********************
+ * Gallery Column 10
+ **********************/
+div#bodyMainColumn_gallery_10{
+	/*background:#000;*/
+	background:url(../image/Art_gallery_bg_d.jpg) 0 0 repeat;
+	color:#FFF;
+	line-height:1.5;
+	border:0px solid #f7b6ce;
+	float:left;
+	width:960px;
+	height:925px;
+	margin:0 0 0 0;
+}
+div#bodyLeftColumn_gallery_10{
+	color:#FFF;
+	border:0px solid #f7b6ce;
+	float:left;
+	width:450px;
+	height:825px;
+	margin:0 0 0 0;
+}
+div#bodyRightColumn_gallery_10{
+	color:#FFF;
+	line-height:1.5;
+	border:0px solid #f7b6ce;
+	float:right;
+	width:450px;
+	height:825px;
+	margin:0 0 0 0;
+}
+div#bodyLeftColumn_gallery_10 .artist_icon{
+	margin:15px 0 0 25px;
+	float:left;
+}
+div#bodyLeftColumn_gallery_10 .artist_name{
+	margin:5px auto;
+	text-align:center;	
+	font-size:20px;	
+}
+div#bodyLeftColumn_gallery_10 .artist_message{
+	margin:18px 0 0 30px;
+	font-size:13px;	
+	line-height:1.2;
+}
+div#bodyLeftColumn_gallery_10 .artist_message_s{
+	margin:10px 0 0 30px;
+	font-size:14px;	
+	line-height:1.0;
+}
+div#bodyLeftColumn_gallery_10 .artist_title{
+	margin:20px 0 5px 0;
+	text-align:center;	
+	font-size:28px;	
+}
+div#bodyLeftColumn_gallery_10 .artist_img_center{
+	margin:0 25px 30px 80px;
+}
+div#bodyLeftColumn_gallery_10 .artist_img_center2{
+	margin:0 25px 30px 120px;
+}
+div#bodyLeftColumn_gallery_10 .artist_img_center3{
+	margin:0 25px 30px 100px;
+}
+div#bodyLeftColumn_gallery_10 .artist_term{
+	margin:0 0 0 120px;
+	font-size:15px;	
+}
+div#bodyRightColumn_gallery_10 .artist_icon{
+	margin:15px 0 0 25px;
+	float:left;
+}
+div#bodyRightColumn_gallery_10 .artist_name{
+	margin:5px auto;
+	text-align:center;	
+	font-size:20px;	
+}
+div#bodyRightColumn_gallery_10 .artist_img1{
+	margin:0 0 30px 0;
+	float:left;
+}
+div#bodyRightColumn_gallery_10 .artist_img2{
+	margin:0 25px 30px 0;
+	float:right;
+}
+div#bodyRightColumn_gallery_10 .artist_img_center{
+	margin:0 25px 30px 40px;
+}
+div#bodyRightColumn_gallery_10 .artist_img_center2{
+	margin:0 25px 30px 120px;
+}
+div#bodyRightColumn_gallery_10 .artist_img_center3{
+	margin:0 25px 30px 100px;
+}
+div#bodyRightColumn_gallery_10 .artist_message{
+	margin:18px 0 0 30px;
+	font-size:13px;	
+	line-height:1.2;
+}
+div#bodyRightColumn_gallery_10 .artist_title{
+	margin:20px 0 5px 0;
+	text-align:center;	
+	font-size:28px;	
+}
+div#bodyRightColumn_gallery_10 .artist_term{
+	margin:0 0 0 120px;
+	font-size:15px;	
+}
+/**********************
+ * STAFF Column
+ **********************/
+div#bodyMainColumn_staff{
+	background:url(../image/Art_staff_bg.jpg) 0 0 repeat;
+	color:#FFF;
+	font-size:14px;
+	line-height:1.5;
+	border:0px solid #f7b6ce;
+	float:left;
+	width:960px;
+	height:825px;
+	margin:0 0 0 0;
+}
+div#bodyLeftColumn_staff{
+	color:#FFF;
+	line-height:1.5;
+	border:0px solid #f7b6ce;
+	float:left;
+	width:480px;
+	height:825px;
+	margin:0 0 0 0;
+}
+div#bodyLeftColumn_staff .staff_photo{
+	/*margin:40px 0 0 50px;*/
+	margin:40px 0 0 100px;
+}
+div#bodyLeftColumn_staff .staff_name{
+	margin:20px 0 0 90px;
+	font-size:26px;	
+}
+div#bodyLeftColumn_staff .staff_name_s{
+	margin:10px 0 0 90px;
+	font-size:14px;	
+}
+div#bodyLeftColumn_staff .staff_bosyu{
+	margin:40px 0 0 95px;
+	font-size:20px;
+}
+div#bodyLeftColumn_staff .staff_bosyu2{
+	margin:20px 0 0 90px;
+	font-size:20px;
+}
+div#bodyLeftColumn_staff .staff_message{
+	margin:40px 0 0 30px;
+	font-size:20px;	
+}
+/**********************
+ * Access Column
+ **********************/
+div#bodyMainColumn_access{
+	background:url(../image/Art_access_bg.jpg) 0 0 repeat;
+	color:#FFF;
+	line-height:1.5;
+	border:0px solid #f7b6ce;
+	float:left;
+	width:960px;
+	height:825px;
+	margin:0 0 0 0;
+}
+div#bodyLeftColumn_access{
+	color:#FFF;
+	line-height:1.5;
+	border:0px solid #f7b6ce;
+	float:left;
+	width:480px;
+	height:825px;
+	margin:0 0 0 0;
+}
+div#bodyLeftColumn_access .art_info_title{
+	margin:50px 0 0 30px;
+	font-size:20px;	
+}
+div#bodyLeftColumn_access .art_info{
+	margin:20px 0 0 60px;
+	font-size:16px;	
+}
+div#bodyLeftColumn_access .boss4f{
+	margin:20px 0 0 30px;
+}
+div#bodyRightColumn_access{
+	color:#FFF;
+	line-height:1.5;
+	border:0px solid #f7b6ce;
+	float:right;
+	width:450px;
+	height:825px;
+	margin:0 0 0 0;
+}
+div#bodyRightColumn_access .map_midashi{
+	margin:20px 35px 0 0;
+	text-align:center;	
+	font-size:16px;	
+}
+div#bodyRightColumn_access .map_img{
+	width:220px;
+	margin:0 0 0 100px;
+}
+div#bodyRightColumn_access .map_message{
+	margin:20px 40px 0 5px;
+	font-size:16px;	
+}
+/**********************
+ * Orgle Column
+ **********************/
+div#bodyMainColumn_orgle{
+	background:url(../image/Art_orgle_bg.jpg) 0 0 repeat;
+	color:#FFF;
+	line-height:1.5;
+	border:0px solid #f7b6ce;
+	float:left;
+	width:960px;
+	height:673px;
+	margin:0 0 0 0;
+}
+/**********************
+ * Right Column
+ **********************/
+div#bodyRightColumn{
+	background:#000;
+	color:#FFF;
+	font-size:14px;
+	line-height:1.5;
+	border:0px solid #f7b6ce;
+	float:right;
+	width:380px;
+	margin:0 0 0 20px;
+}
+div#bodyRightColumn #Topics{
+	background:#000;
+	height:auto;
+	margin-bottom:16px;
+	margin-left:20px;
+}
+div#bodyRightColumn #Youtube{
+	background:#000;
+	height:auto;
+	margin:10px 0 10px 0;
+	text-align:center;
+}
+div#bodyRightColumn #Blog{
+	background:#000;
+	height:auto;
+	margin-bottom:10px;
+	margin-left:20px;
+}
+div#bodyRightColumn p{
+	margin:5px 5px 0 15px;
+	font-size:16px;
+	font-weight:bold;
+}
+div#bodyRightColumn .description{
+	font-size:8px;
+}
+div#bodyRightColumn .category{
+	float:right;
+	margin-bottom:15px;
+}
+div#bodyRightColumn .banner_coment{
+	margin:0 0 0 50px;
+	font-weight:normal;
+	font-size:14px;
+}
+div#bodyRightColumn .banner{
+	margin:0 0 15px 60px;
+}
+div#bodyRightColumn .cd_jyake{
+	float:right;
+	margin:5px 5px 10px 0;
+}
+div#bodyRightColumn h1{
+	font-size:24px;
+}
+div#bodyRightColumn .blog_icon{
+	float:left;
+	margin:5px 15px 5px 20px;
+}
+div#bodyRightColumn .blog_title{
+	margin:20px 0 0 0;
+	font-size:14px;
+	font-weight:normal;
+}
+div#bodyRightColumn .official_blog_icon{
+	margin:15px 15px 0 20px;
+}
+div#bodyRightColumn .official_blog_title{
+	margin:0 0 0 95px;
+	font-size:14px;
+	font-weight:normal;
+}
+dl#TOPICS{ margin:10px 0 0 5px; font-size:14px;}
+dl#TOPICS dt{ margin:5px 0 0 0; font-size:16px;	font-weight:bold;}
+dl#TOPICS dd{ margin-left:25px; font-size:13px;}
+
+dl#newsTopics{ margin:10px 0 0 10px; font-size:16px;}
+dl#newsTopics dt{ }
+dl#newsTopics dt,
+dl#newsTopics dd{ float:left; display:block; height: auto; font-size:14px;}
+dl#newsTopics dt{ }
+dl#newsTopics dd{ font-size:12px; margin:5px 0 5px 0; float:right;}
+dl#newsTopics span_live{ color:#5555FF;}
+dl#newsTopics span_event{ color:#55BB55;}
+dl#newsTopics span_cd{ color:#FF5555;}
+dl#newsTopics span_tv{ color:#55FF55;}
+dl#newsTopics span_radio{ color:#FF55FF;}
+
+/**********************
+ * Main Column
+ **********************/
+/*div#bodyMainColumn{
+	background:#000;
+	color:#333;
+	font-size:12px;
+	line-height:1.3;
+	border:0px solid #f7b6ce;
+	float:left;
+	width:960px;
+	margin:0 0 0 0;
+}
+div#bodyMainColumn_black{
+	background:#000;
+	color:#333;
+	font-size:12px;
+	line-height:1.3;
+	border:0px solid #f7b6ce;
+	float:left;
+	width:960px;
+	margin:0 0 0 19px;
+}
+div#bodyMainColumn .coming{
+	font-size:24px;
+	text-align:center;
+}
+div#bodyMainColumn #Youtube{
+	background:#000;
+	height:auto;
+	margin:20px 0 10px 0;
+	text-align:center;
+}
+div#bodyMainColumn .Youtube_text{
+	margin:3px 0 0 0;
+	text-align:center;
+}*/
+/**********************
+ * Profile Column
+ **********************/
+.profile_image{
+	margin:0 0 0 15px;
+}
+
+div#ProfileColumn_start{
+	background:#000;
+	line-height:1.3;
+	font-size:7px;
+	color:#FFFFFF;
+	float:left;
+	width:221px;
+	margin:0 0 0 25px;
+}
+div#ProfileColumn{
+	background:#000;
+	line-height:1.3;
+	font-size:7px;
+	color:#FFFFFF;
+	float:left;
+	width:221px;
+	margin:0 0 0 10px;
+}
+div#ProfileColumn_start h1{
+	text-align:center;
+	font-size:18px;
+}
+div#ProfileColumn_start h2{
+	margin:3px;
+}
+div#ProfileColumn h1{
+	text-align:center;
+	font-size:18px;
+}
+div#ProfileColumn h2{
+	margin:3px;
+}
+/**********************
+ * Schedule Column
+ **********************/
+div#ScheduleColumn{
+	background:#000;
+	line-height:1.2;
+	font-size:14px;
+	float:left;
+	width:900px;
+	margin:0 0 0 40px;
+}
+div#ScheduleColumn h1{
+	font-size:18px;
+}
+div#ScheduleColumn h2{
+	font-size:18px;
+	margin:20px 0 0 0;
+}
+div#ScheduleColumn p{
+	font-size:14px;
+	margin:10px 0 10px 10px;
+	line-height:1.3;
+}
+div#ScheduleColumn .schedule_top{
+	font-size:15px;
+	margin:10px 0 10px 10px;
+	
+}
+div#ScheduleColumn a{
+	color:#00A; text-decoration:underline;
+}
+div#ScheduleColumn .schedule_toku{
+	font-size:17px;
+	margin:10px;
+	
+}
+/**********************
+ * Photos Column
+ **********************/
+div#bodyMainColumn .photos_title{
+	background:#000;
+	color:#FFF;
+	margin:0 0 15px 30px;	
+	font-size:16px;
+}
+div#bodyMainColumn .photos_pri{
+	margin:30px 0 0 0;
+	text-align:center;
+	font-size:16px;
+}
+div#PhotosColumn{
+	background:#000;
+	width:896px;
+	margin:0 0 0 45px;
+}
+div#PhotosColumn .images{
+	margin:0 0 0 0;
+}
+div#PhotosColumn .images2{
+	margin:0 0 4px 0;
+}
+div#PhotosColumn .images_left{
+	margin:0 5px 0 0;
+	float:left;
+}
+div#PhotosColumn .images_right{
+	margin:0 0 0 5px;
+	float:right;
+}
+div#PhotosColumn .images_bottom{
+	vertical-align:bottom;
+}
