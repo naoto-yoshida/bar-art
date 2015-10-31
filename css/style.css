@@ -143,18 +143,18 @@ div#bodyMainColumn_top .top_kokuchi_tx{
 	text-align:center;
 }
 div#bodyMainColumn_top .staff_bosyu{
-	margin:30px 0 0 320px;
-background-color:rgba(0,0,0,0.70);
+	margin:20px 0 0 260px;
+	background-color:rgba(0,0,0,0.70);
 /*	background:#F00;*/
-	width:240px;
-	height:70px;
+	width:360px;
+/*	height:70px;*/
+	height:120px;
 }
 div#bodyMainColumn_top .top_kokuchi_tx2{
 /*	margin:30px 0 0 300px;
 	width:280px;*/
-	padding-top:10px;
+	padding:8px 0 0 8px;
 	font-size:18px;
-	text-align:center;
 }
 
 
@@ -451,7 +451,7 @@ div#bodyLeftColumn_gallery_d .artist_img_center3{
 	margin:0 25px 30px 100px;
 }
 div#bodyLeftColumn_gallery_d .artist_term{
-	margin:0 0 0 120px;
+	margin:0 0 0 110px;
 	font-size:15px;	
 }
 div#bodyRightColumn_gallery_d .artist_icon{
